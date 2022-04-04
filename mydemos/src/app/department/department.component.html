@@ -1,0 +1,62 @@
+<!-- left department -->
+<div class="form_all">
+<div class="form_right">
+ 
+    <h1> Department</h1>
+    
+    <div class="input-group">
+        <!-- <label for="name">Name:</label> -->
+        <button  type="text" class="btn btn-success" >  
+            Depart_Name: {{department_name}}
+        </button>
+        <input type="text" class="form-control" id="name"  [value]="department_name" [(ngModel)]="department_name" required/> 
+    
+    </div>
+
+    <div class="input-group">
+        <!-- <label for="mark">Mark:</label> -->
+        <button  type="text" class="btn btn-success"  >
+            Depart_description: {{department_description}}
+        </button>
+        <input type="text" class="form-control" id="mark"  [value]="department_description" [(ngModel)]="department_description" required/>
+        
+    </div>     
+    <br>
+    <button type="text" class="btn btn-success" (click)="create()"> Create </button>
+    &nbsp;
+    <button type="text" class="btn btn-success" (click)="reset()"> Reset </button>
+    &nbsp;
+    <button type="text" class="btn btn-success" (click)="update()"> Update </button>
+</div>
+
+<!-- right information department -->
+
+<div class="form_left">  
+    <h1> List Department details</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Mã Phòng Ban </th>
+                <th>Tên Phòng Ban </th>
+                <th> thông tin  </th>
+                <th> Action </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dep of departments"> 
+                <td> <p>{{dep.id}} </p> </td>
+                <td> <p>{{dep.name}} </p> </td>
+                <td> <p>{{dep.description}} </p> </td>
+                <td>  
+                    <button  type="text" class="btn btn-success" (click)="delete(dep.id)"> delete </button>
+                    &nbsp;
+                    <button  type="text" class="btn btn-success" (click)="edit(dep.id)"> Edit </button>
+                    &nbsp;
+                    <a [routerLink]="['/user']" routerLinkActive="router-link-active"> <button  type="text" class="btn btn-success"> User </button> </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

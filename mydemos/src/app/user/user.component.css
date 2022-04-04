@@ -1,0 +1,85 @@
+.form_all{
+    background-color:pink;
+}
+
+/* Right */
+.form_left{
+    width:70%;
+    height:auto;
+    /* background-color:aqua; */
+    float:left;
+  
+}
+.form_left h1{
+    text-align:center;
+    padding-top:20px;
+    text-shadow: 2px 2px red;
+}
+.form_left table{
+    font-size:50x;
+}
+
+   
+.form_left table thead th {
+    text-shadow: 2px 2px white;
+   color:green;
+    text-align:center;
+    font-size: 20px;
+}
+
+.form_left table tbody td {
+    text-align:center;
+    vertical-align: center;
+    padding-top:20px;
+    
+}
+.form_left button{
+    margin-right: 20px;
+    width:100px;
+    height:50px;
+    border-radius: 15px;
+}
+.form_left button:hover{
+    background-color:rgb(23, 159, 168);
+    color:#000;
+}
+.form_left table tr:hover{
+    background-color:none;
+    color:black;
+}
+
+
+/* left */
+.form_right{
+    width:25%;
+    height:auto;
+    /* background-color:aquamarine; */
+    float:right;
+    /* margin-right:100px;
+    padding-right:100px; */
+}
+.form_right input{
+    width:420px;
+    height:70px;
+    border-radius: 15px;
+}
+.form_right h1{
+    padding-top:20px;
+    text-align:center;
+    color:#ac4e29;
+}
+.form_right h3{
+    
+    text-align:center;
+    color:#f3be72;
+}
+.form_right button{
+    margin-right: 20px;
+    width:100px;
+    height:50px;
+    border-radius: 15px;
+}
+.form_right button:hover{
+    background-color:aquamarine;
+    color:#000;
+}
